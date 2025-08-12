@@ -1,4 +1,4 @@
-import { prismaClient } from "db/client";
+import { prismaClient } from "database/client";
 import express from "express"
 
 const app = express();

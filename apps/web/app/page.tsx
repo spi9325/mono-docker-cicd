@@ -1,4 +1,4 @@
-import { prismaClient } from "db/client";
+import { prismaClient } from "database/client";
 
 export default async function Home() {
   const users = await prismaClient.user.findFirst({});
