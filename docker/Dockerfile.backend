@@ -9,7 +9,7 @@ COPY ./package.json ./package.json
 COPY ./turbo.json ./turbo.json
 
 COPY ./apps/backend ./apps/backend
-
+COPY . .
 RUN bun install && cd packages/db && bun run generate
 
 EXPOSE 8080
