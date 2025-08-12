@@ -9,7 +9,6 @@ COPY ./package.json ./package.json
 COPY ./turbo.json ./turbo.json
 
 COPY ./apps/backend ./apps/backend
-COPY ./packages/db/prisma/schema.prisma ./packages/db/prisma/schema.prisma
 
 RUN bun install
 RUN bun run db:generate
