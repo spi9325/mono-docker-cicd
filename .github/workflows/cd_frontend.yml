@@ -1,4 +1,4 @@
-name: push to ec2 docker
+name: deploy frontend
 on:
     push:
         branches: [main]
