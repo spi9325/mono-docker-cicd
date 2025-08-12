@@ -23,5 +23,5 @@ jobs:
                 context: .
                 file: ./docker/Dockerfile.backend
                 push: true
-                tags: mono-docker-cicd:${{ github.sha }}     
+                tags: spi9325/mono-docker-cicd:${{ github.sha }}     
                 
