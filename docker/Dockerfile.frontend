@@ -11,7 +11,9 @@ COPY ./turbo.json ./turbo.json
 
 COPY ./apps/web ./apps/web
 
-Run bun install
+COPY . .
+
+RUN bun install
 RUN bun run db:generate
 RUN DATABASE_URL=${DATABASE_URL} bun run build
 
