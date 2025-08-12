@@ -10,8 +10,7 @@ COPY ./turbo.json ./turbo.json
 
 COPY ./apps/backend ./apps/backend
 
-RUN bun install
-RUN bun run db:generate
+RUN bun install && cd packages/db && bun run generate
 
 EXPOSE 8080
 
