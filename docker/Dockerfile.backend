@@ -11,6 +11,8 @@ COPY ./turbo.json ./turbo.json
 COPY ./apps/backend ./apps/backend
 COPY ./packages/db ./packages/db
 
+COPY . .
+
 RUN bun install
 RUN bun run db:generate
 
