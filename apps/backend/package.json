@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start":"cd packages/db && bunx prisma generate && bun run index.ts"
+    "start":"cd packages/db && bunx prisma generate && cd ../.. && bun run index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
